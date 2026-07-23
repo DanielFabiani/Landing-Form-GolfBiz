@@ -1,4 +1,4 @@
-# ⛳ Template Landing form Golf Tank
+# ⛳ Template Landing form Golf Fourwinds
 
 ¡Bienvenido al **Golf Event Landing Template**! Esta es una plantilla premium diseñada para crear rápidamente landing pages interactivas para torneos o eventos de golf, con un formulario de acreditación completamente funcional que guarda los registros directamente en **Google Sheets** sin depender de servicios de terceros pagos.
 
