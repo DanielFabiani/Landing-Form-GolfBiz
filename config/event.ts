@@ -33,11 +33,11 @@ export const EVENT = {
 
   // ── Agenda ───────────────────────────────────────────────────
   agenda: [
-    { time: '8:30 hs', title: 'Bienvenida y acreditación', highlight: false },
-    { time: '9:30 hs',    title: 'Salidas simultáneas',          highlight: true  },
-    { time: '14:00 hs',    title: 'Fin del juego',              highlight: false },
-    { time: '14:15 hs',    title: 'Cocktail de cierre y entrega de premios', highlight: true },
-    { time: '16:00 hs',    title: 'Finalización del evento',    highlight: false },
+    { time: '9:00 hs', title: 'Bienvenida y desayuno', highlight: false },
+    { time: '10:00 hs',    title: 'Salidas Simultaneas',          highlight: true  },
+    { time: '14:30 hs',    title: 'Fin del juego',              highlight: false },
+    { time: '14:45 hs',    title: 'Almuerzo y entrega de premios', highlight: true },
+    { time: '15:30 hs',    title: 'Finalización del evento',    highlight: false },
   ],
 
   // ── Formato ───────────────────────────────────────────────────
@@ -57,12 +57,14 @@ export const EVENT = {
 
 // ── Campos del formulario ─────────────────────────────────────
 export const FORM_FIELDS = [
-  { id: 'nombre',    label: 'Nombre',              type: 'text',  required: true,  placeholder: 'Juan',              autocomplete: 'given-name',   col: 1 },
-  { id: 'apellido',  label: 'Apellido',            type: 'text',  required: true,  placeholder: 'Pérez',             autocomplete: 'family-name',  col: 1 },
-  { id: 'email',     label: 'Email',               type: 'email', required: true,  placeholder: 'vos@email.com',   autocomplete: 'email',        col: 1 },
-  { id: 'whatsapp',  label: 'WhatsApp',            type: 'tel',   required: true,  placeholder: '+54 9 11 …',        autocomplete: 'tel',          col: 1 },
-  { id: 'handicap',  label: 'Matrícula AAG', type: 'text', required: true, placeholder: '135052', autocomplete: 'off', col: 2 },
-  { id: 'empresa',   label: 'Empresa',             type: 'text',  required: true, placeholder: 'Empresa',        autocomplete: 'organization', col: 2 },
+  { id: 'nombre',                 label: 'Nombre',                  type: 'text',     required: true,  placeholder: 'Juan',              autocomplete: 'given-name',   col: 1 },
+  { id: 'apellido',               label: 'Apellido',                type: 'text',     required: true,  placeholder: 'Pérez',             autocomplete: 'family-name',  col: 1 },
+  { id: 'email',                  label: 'Email',                   type: 'email',    required: true,  placeholder: 'vos@email.com',   autocomplete: 'email',        col: 1 },
+  { id: 'whatsapp',               label: 'WhatsApp',                type: 'tel',      required: true,  placeholder: '+54 9 11 …',        autocomplete: 'tel',          col: 1 },
+  { id: 'handicap',               label: 'Matrícula AAG',     type: 'text',     required: true,  placeholder: '135052',            autocomplete: 'off',          col: 1 },
+  { id: 'empresa',                label: 'Empresa',                 type: 'text',     required: true,  placeholder: 'Empresa',           autocomplete: 'organization', col: 1 },
+  { id: 'restriccionAlimentaria', label: 'Restricción alimentaria', type: 'radio',    required: true,  placeholder: '',                  autocomplete: 'off',          col: 1 },
+  { id: 'comentarios',            label: 'Comentarios',             type: 'textarea', required: false, placeholder: 'Aclaraciones o comentarios...', autocomplete: 'off', col: 1 },
 ] as const;
 
 export type FormFieldId = (typeof FORM_FIELDS)[number]['id'];

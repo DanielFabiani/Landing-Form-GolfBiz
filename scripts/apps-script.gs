@@ -16,6 +16,8 @@ function doPost(e) {
         "WhatsApp",
         "Handicap",
         "Empresa",
+        "Restricción Alimentaria",
+        "Comentarios",
       ];
       sheet.appendRow(headers);
       const h = sheet.getRange(1, 1, 1, headers.length);
@@ -31,6 +33,8 @@ function doPost(e) {
       data.whatsapp || "",
       data.handicap || "",
       data.empresa || "",
+      data.restriccionAlimentaria || "",
+      data.comentarios || "",
     ]);
 
     return ContentService.createTextOutput(
@@ -53,6 +57,8 @@ function testDoPost() {
         whatsapp: "11 1234-5678",
         handicap: "AAG 135052",
         empresa: "Empresa SA",
+        restriccionAlimentaria: "No",
+        comentarios: "Sin comentarios",
       }),
     },
   };

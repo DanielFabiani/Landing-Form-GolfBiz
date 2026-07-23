@@ -10,7 +10,12 @@ type Status = "idle" | "loading" | "success" | "error";
 
 export default function RegistrationForm() {
   const [form, setForm] = useState<FormState>(
-    Object.fromEntries(FORM_FIELDS.map((f) => [f.id, ""])) as FormState,
+    Object.fromEntries(
+      FORM_FIELDS.map((f) => [
+        f.id,
+        f.id === "restriccionAlimentaria" ? "No" : "",
+      ]),
+    ) as FormState,
   );
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -105,7 +110,7 @@ export default function RegistrationForm() {
           {FORM_FIELDS.map((field) => (
             <div
               key={field.id}
-              className={`flex flex-col gap-2 ${field.col === 2 ? "sm:col-span-2" : ""}`}
+              className={`flex flex-col gap-2 ${(field.col as number) === 2 ? "sm:col-span-2" : ""}`}
             >
               <label
                 htmlFor={field.id}
@@ -116,16 +121,52 @@ export default function RegistrationForm() {
                   <span className="text-[rgba(165,210,157,0.8)] ml-0.5">*</span>
                 )}
               </label>
-              <input
-                id={field.id}
-                type={field.type}
-                value={form[field.id]}
-                onChange={(e) => handleChange(field.id, e.target.value)}
-                placeholder={field.placeholder}
-                autoComplete={field.autocomplete}
-                required={field.required}
-                className="bg-white/[0.07] border border-white/[0.12] rounded px-4 py-3.5 text-[15px] font-sans text-white outline-none transition-colors duration-200 appearance-none placeholder:text-white/[0.22] focus:border-[rgba(165,210,157,0.6)] focus:bg-white/10"
-              />
+              {field.type === "radio" ? (
+                <div className="flex items-center gap-8 h-[50px]">
+                  <label className="inline-flex items-center gap-2.5 text-[15px] font-sans text-white cursor-pointer select-none">
+                    <input
+                      type="radio"
+                      name={field.id}
+                      value="No"
+                      checked={form[field.id] === "No"}
+                      onChange={(e) => handleChange(field.id, e.target.value)}
+                      className="w-4 h-4 accent-[rgba(165,210,157,0.9)] cursor-pointer"
+                    />
+                    <span>No</span>
+                  </label>
+                  <label className="inline-flex items-center gap-2.5 text-[15px] font-sans text-white cursor-pointer select-none">
+                    <input
+                      type="radio"
+                      name={field.id}
+                      value="Sí"
+                      checked={form[field.id] === "Sí"}
+                      onChange={(e) => handleChange(field.id, e.target.value)}
+                      className="w-4 h-4 accent-[rgba(165,210,157,0.9)] cursor-pointer"
+                    />
+                    <span>Sí</span>
+                  </label>
+                </div>
+              ) : field.type === "textarea" ? (
+                <textarea
+                  id={field.id}
+                  value={form[field.id]}
+                  onChange={(e) => handleChange(field.id, e.target.value)}
+                  placeholder={field.placeholder}
+                  rows={1}
+                  className="bg-white/[0.07] border border-white/[0.12] rounded px-4 py-3 text-[15px] font-sans text-white outline-none transition-colors duration-200 placeholder:text-white/[0.22] focus:border-[rgba(165,210,157,0.6)] focus:bg-white/10 resize-none h-[50px]"
+                />
+              ) : (
+                <input
+                  id={field.id}
+                  type={field.type}
+                  value={form[field.id]}
+                  onChange={(e) => handleChange(field.id, e.target.value)}
+                  placeholder={field.placeholder}
+                  autoComplete={field.autocomplete}
+                  required={field.required}
+                  className="bg-white/[0.07] border border-white/[0.12] rounded px-4 py-3.5 text-[15px] font-sans text-white outline-none transition-colors duration-200 appearance-none placeholder:text-white/[0.22] focus:border-[rgba(165,210,157,0.6)] focus:bg-white/10"
+                />
+              )}
             </div>
           ))}
         </div>

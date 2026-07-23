@@ -1,12 +1,22 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+interface RegistrationPayload {
+  nombre?: string;
+  apellido?: string;
+  email?: string;
+  whatsapp?: string;
+  handicap?: string;
+  empresa?: string;
+  restriccionAlimentaria?: string;
+  comentarios?: string;
+  timestamp?: string;
+}
+
 /**
  * POST /api/register
  *
  * Actúa como proxy entre el formulario del cliente y el Google Apps Script.
  * Esto evita el problema de CORS/no-cors que tiene el fetch directo desde el browser.
- *
- * El cuerpo esperado es el mismo payload del formulario en JSON.
  */
 export async function POST(req: NextRequest) {
   const appsScriptUrl = process.env.APPS_SCRIPT_URL;
@@ -18,18 +28,30 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  let body: unknown;
+  let body: RegistrationPayload;
   try {
-    body = await req.json();
+    body = (await req.json()) as RegistrationPayload;
   } catch {
     return NextResponse.json({ error: 'Payload inválido.' }, { status: 400 });
   }
+
+  const payload: RegistrationPayload = {
+    nombre: body.nombre || '',
+    apellido: body.apellido || '',
+    email: body.email || '',
+    whatsapp: body.whatsapp || '',
+    handicap: body.handicap || '',
+    empresa: body.empresa || '',
+    restriccionAlimentaria: body.restriccionAlimentaria || 'No',
+    comentarios: body.comentarios || '',
+    timestamp: body.timestamp || new Date().toISOString(),
+  };
 
   try {
     const response = await fetch(appsScriptUrl, {
       method:  'POST',
       headers: { 'Content-Type': 'application/json' },
-      body:    JSON.stringify(body),
+      body:    JSON.stringify(payload),
     });
 
     // Apps Script a veces devuelve texto plano; manejamos ambos casos
