@@ -8,10 +8,10 @@
 
 // ── Identidad ────────────────────────────────────────────────
 export const EVENT = {
-  name:        'Golf Biz',
+  name:        'GolfBiz',
   edition:     'Edición I · 2026',
   badgeText:   'Golf Club Argentino · Buenos Aires · Edición I',
-  tagline:     'Golf Biz', 
+  tagline:     'GolfBiz', 
   date: {
     display: 'Viernes\n28 de agosto', // \n genera salto de línea
     year:    '2026',
@@ -49,7 +49,7 @@ export const EVENT = {
 
   // ── SEO / Meta ────────────────────────────────────────────────
   meta: {
-    title:       'Golf Biz — Golf Club Argentino · 28 de agosto 2026',
+    title:       'GolfBiz — Golf Club Argentino · 28 de agosto 2026',
     description: 'Torneo por invitación. 20 jugadores. Golf Club Argentino, Buenos Aires',
     ogImage:     'logo-golfbiz.svg',
   },

@@ -17,7 +17,7 @@ export default function Agenda() {
               Cómo va a ser la jornada
             </h2>
             <p className="text-base text-on-surface-variant leading-[1.65] mt-3">
-              Recepción temprana, salida simultánea, cocktail de cierre con
+              Recepción temprana, salidas simultáneas, cocktail de cierre con
               palabras de los directivos y entrega de premios.
             </p>
           </div>
