@@ -49,8 +49,8 @@ export const EVENT = {
 
   // ── SEO / Meta ────────────────────────────────────────────────
   meta: {
-    title:       'Golf Biz — Club House Golf Pilará · 11 de Junio 2026',
-    description: 'Torneo por invitación. 20 jugadores. Club House Golf Pilará, Buenos Aires',
+    title:       'Golf Biz — Club Argentino de Golf · 28 de Agosto 2026',
+    description: 'Torneo por invitación. 20 jugadores. Club Argentino de Golf, Buenos Aires',
     ogImage:     'logo-golfbiz.svg',
   },
 } as const;
