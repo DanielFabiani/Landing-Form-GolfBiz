@@ -10,15 +10,15 @@
 export const EVENT = {
   name:        'Golf Biz',
   edition:     'Edición I · 2026',
-  badgeText:   'Club Argentino de Golf · Buenos Aires · Edición I',
+  badgeText:   'Golf Club Argentino · Buenos Aires · Edición I',
   tagline:     'Golf Biz', 
   date: {
-    display: 'viernes\n28 de Agosto', // \n genera salto de línea
+    display: 'Viernes\n28 de Agosto', // \n genera salto de línea
     year:    '2026',
     iso:     '2026-08-28',
   },
   venue: {
-    name:     'Club Argentino de Golf',
+    name:     'Golf Club Argentino',
     location: 'Buenos Aires, Argentina',
     address:  'Ruta Nacional 8 Km 41.5, B1669 José C. Paz, Provincia de Buenos Aires',
     mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.1758227625223!2d-58.791937499999996!3d-34.4730637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc986eb7cf2563%3A0x4ef6791c4bdf4205!2sGolf%20Club%20Argentino!5e0!3m2!1ses!2sar!4v1784823827371!5m2!1ses!2sar',
@@ -34,7 +34,7 @@ export const EVENT = {
   // ── Agenda ───────────────────────────────────────────────────
   agenda: [
     { time: '9:00 hs', title: 'Bienvenida y desayuno', highlight: false },
-    { time: '10:00 hs',    title: 'Salidas Simultaneas',          highlight: true  },
+    { time: '10:00 hs',    title: 'Salidas simultáneas',          highlight: true  },
     { time: '14:30 hs',    title: 'Fin del juego',              highlight: false },
     { time: '14:45 hs',    title: 'Almuerzo y entrega de premios', highlight: true },
     { time: '15:30 hs',    title: 'Finalización del evento',    highlight: false },
@@ -49,7 +49,7 @@ export const EVENT = {
 
   // ── SEO / Meta ────────────────────────────────────────────────
   meta: {
-    title:       'Golf Biz — Club Argentino de Golf · 28 de Agosto 2026',
+    title:       'Golf Biz — Golf Club Argentino · 28 de Agosto 2026',
     description: 'Torneo por invitación. 20 jugadores. Club Argentino de Golf, Buenos Aires',
     ogImage:     'logo-golfbiz.svg',
   },

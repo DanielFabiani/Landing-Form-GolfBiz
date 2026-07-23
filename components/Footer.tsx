@@ -13,15 +13,15 @@ export default function Footer() {
         <div className="flex items-center md:w-1/3 md:justify-start">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo-golf-tank-footer.svg"
+            src="/logo-golfbiz-footer.svg"
             alt="Golf Tank"
-            className="h-24 w-auto"
+            className="h-10 w-auto"
           />
         </div>
 
         {/* Centro: Links (Web e Instagram) */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:w-auto">
-          <Link
+          {/* <Link
             href="https://www.instagram.com/golftank_/"
             target="_blank"
             rel="noopener noreferrer"
@@ -36,7 +36,7 @@ export default function Footer() {
             <span className="text-base font-medium w-20">Golf Tank</span>
           </Link>
 
-          <div className="hidden md:block w-px h-10 bg-primary/50" />
+          <div className="hidden md:block w-px h-10 bg-primary/50" /> */}
 
           <Link
             href="https://www.instagram.com/fourwindsarg/"
