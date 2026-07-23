@@ -73,13 +73,40 @@ export default function Agenda() {
           </div>
         </div>
 
-        <div className="relative w-full h-full min-h-[400px] lg:min-h-full rounded-2xl overflow-hidden">
-          <Image
-            src="/imagen-agenda.jpeg"
-            alt="Agenda de la jornada"
-            fill
-            className="object-cover"
-          />
+        {/* Bento Grid con 3 imágenes */}
+        <div className="flex flex-col gap-3 sm:gap-4 w-full h-full min-h-[420px] lg:min-h-0">
+          {/* Imagen superior horizontal (agenda-1) */}
+          <div className="relative w-full flex-1 min-h-[210px] sm:min-h-[240px] rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
+            <Image
+              src="/agenda-1.webp"
+              alt="Jornada de Golf Biz - Campo de Golf"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+
+          {/* Fila inferior con 2 imágenes (agenda-2 y agenda-3) */}
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full flex-1 min-h-[210px] sm:min-h-[240px]">
+            <div className="relative w-full h-full rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
+              <Image
+                src="/agenda-2.webp"
+                alt="Detalle Pelota Golf Tank"
+                fill
+                sizes="(max-width: 1024px) 50vw, 25vw"
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative w-full h-full rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
+              <Image
+                src="/agenda-3.webp"
+                alt="Jugador de Golf Tank"
+                fill
+                sizes="(max-width: 1024px) 50vw, 25vw"
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
