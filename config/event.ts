@@ -8,22 +8,21 @@
 
 // ── Identidad ────────────────────────────────────────────────
 export const EVENT = {
-  name:        'Golf Tank',
+  name:        'Golf Biz',
   edition:     'Edición I · 2026',
-  badgeText:   'Club House Golf Pilará · Buenos Aires · Edición I',
-  tagline:     'Golf Tank', 
+  badgeText:   'Club Argentino de Golf · Buenos Aires · Edición I',
+  tagline:     'Golf Biz', 
   date: {
-    display: 'jueves\n11 de Junio', // \n genera salto de línea
+    display: 'viernes\n28 de Agosto', // \n genera salto de línea
     year:    '2026',
-    iso:     '2026-06-11',
+    iso:     '2026-08-28',
   },
   venue: {
-    name:     'Club House Golf Pilará',
+    name:     'Club Argentino de Golf',
     location: 'Buenos Aires, Argentina',
-    address:  'Panamericana km 56,5, B1670 Pilar, Provincia de Buenos Aires',
-    mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.3319533954177!2d-58.9548731!3d-34.469102299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc83d7100ad837%3A0x87789a741472c4a2!2sClub%20House%20Golf%20Pilar%C3%A1!5e0!3m2!1ses!2sar!4v1779316656392!5m2!1ses!2sar',
+    address:  'Ruta Nacional 8 Km 41.5, B1669 José C. Paz, Provincia de Buenos Aires',
+    mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.1758227625223!2d-58.791937499999996!3d-34.4730637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc986eb7cf2563%3A0x4ef6791c4bdf4205!2sGolf%20Club%20Argentino!5e0!3m2!1ses!2sar!4v1784823827371!5m2!1ses!2sar',
     notes: [
-      '40 min desde CABA por Panamericana',
       'Invitación personal no transferible',
     ],
   },
@@ -50,9 +49,9 @@ export const EVENT = {
 
   // ── SEO / Meta ────────────────────────────────────────────────
   meta: {
-    title:       'Golf Tank — Club House Golf Pilará · 11 de Junio 2026',
+    title:       'Golf Biz — Club House Golf Pilará · 11 de Junio 2026',
     description: 'Torneo por invitación. 20 jugadores. Club House Golf Pilará, Buenos Aires',
-    ogImage:     '/logo-golf-tank-social.png',
+    ogImage:     'logo-golfbiz.svg',
   },
 } as const;
 
