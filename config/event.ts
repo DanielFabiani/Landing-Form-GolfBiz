@@ -28,8 +28,7 @@ export const EVENT = {
   },
 
   // ── Imagen del hero ──────────────────────────────────────────
-  // Reemplazá por una URL propia o colocá el archivo en /public/hero.jpg
- /*  heroImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAi54gOPSlv6sowDEQxeu-iRcShcRgZTsBosbYYtt8aHVb4q5gHuCMf-Qu8q0CPFOAzacIZ-GIwHkMPhQPbjO2rsSZj2Ep4gvbCn6jYXP_TAZTrlvdk796b-0tetOoaUV_uFs_aYUE0PrH8K9QD9dSbchLr1-8PQVyiXKfhLF71TXVbFR_HbVlvb8dz-nXImw0wOOIjBqCDNaJwIMt8Py-t-ZtZfTkSICTnDdIN9ipXLKR8dCB6U3SEgZNaqXhROXulNSa3UPZNOIk', */
+  heroImage: '/hero-image.jpeg',
 
   // ── Agenda ───────────────────────────────────────────────────
   agenda: [
@@ -51,7 +50,7 @@ export const EVENT = {
   meta: {
     title:       'GolfBiz — Golf Club Argentino · 28 de agosto 2026',
     description: 'Torneo por invitación. 20 jugadores. Golf Club Argentino, Buenos Aires',
-    ogImage:     '/opengraph-image.jpg',
+    ogImage:     '/hero-image.jpeg',
   },
 } as const;
 

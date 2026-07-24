@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     images: [
       {
         url:    EVENT.meta.ogImage,
-        width:  1200,
-        height: 630,
+        width:  1280,
+        height: 984,
         alt:    EVENT.name,
         type:   'image/jpeg',
       },
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     images: [
       {
         url:    EVENT.meta.ogImage,
-        width:  1200,
-        height: 630,
+        width:  1280,
+        height: 984,
         alt:    EVENT.name,
       },
     ],
