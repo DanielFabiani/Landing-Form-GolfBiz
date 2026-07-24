@@ -10,14 +10,16 @@ const jakarta = Plus_Jakarta_Sans({
   variable: '--font-jakarta',
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://golf-tank.vercel.app';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://golf-tank.vercel.app'),
+  metadataBase: new URL(siteUrl),
   title:       EVENT.meta.title,
   description: EVENT.meta.description,
   openGraph: {
     title:       EVENT.meta.title,
     description: EVENT.meta.description,
-    url:         'https://golf-tank.vercel.app',
+    url:         siteUrl,
     siteName:    EVENT.name,
     images: [
       {
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
         width:  1200,
         height: 630,
         alt:    EVENT.name,
-        type:   'image/png',
+        type:   'image/jpeg',
       },
     ],
     type:        'website',

@@ -51,7 +51,7 @@ export const EVENT = {
   meta: {
     title:       'GolfBiz — Golf Club Argentino · 28 de agosto 2026',
     description: 'Torneo por invitación. 20 jugadores. Golf Club Argentino, Buenos Aires',
-    ogImage:     'logo-golfbiz.svg',
+    ogImage:     '/opengraph-image.jpg',
   },
 } as const;
 

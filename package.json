@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check:deps": "node scripts/check-deps-age.mjs"
+    "check:deps": "node scripts/check-deps-age.mjs",
+    "generate:og": "node scripts/generate-og-image.mjs"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.44.0",
