@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     images: [
       {
         url:    EVENT.meta.ogImage,
-        width:  600,
-        height: 314,
+        width:  1200,
+        height: 630,
         alt:    EVENT.name,
         type:   'image/png',
       },
