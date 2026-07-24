@@ -10,7 +10,7 @@ const jakarta = Plus_Jakarta_Sans({
   variable: '--font-jakarta',
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://golf-tank.vercel.app';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://golf-biz.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
