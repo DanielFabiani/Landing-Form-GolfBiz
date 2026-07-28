@@ -28,7 +28,7 @@ export const EVENT = {
   },
 
   // ── Imagen del hero ──────────────────────────────────────────
-  heroImage: '/hero-image.jpeg',
+  heroImage: '',
 
   // ── Agenda ───────────────────────────────────────────────────
   agenda: [

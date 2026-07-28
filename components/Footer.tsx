@@ -10,11 +10,17 @@ export default function Footer() {
     <footer className="px-5 pt-10 pb-6 md:px-16 md:pt-12 md:pb-8 border-t-[0.5px] border-outline-variant flex flex-col items-center">
       <div className="w-full flex flex-col items-center md:flex-row md:justify-between gap-10 md:gap-0">
         {/* Izquierda: Logo */}
-        <div className="flex items-center md:w-1/3 md:justify-start">
+        <div className="flex items-center md:w-1/3 md:justify-start gap-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo-golfbiz-footer.svg"
             alt="Golf Tank"
+            className="h-10 w-auto"
+          />
+
+          <img
+            src="/fast-track-logo-marca.png"
+            alt="Fasttrack"
             className="h-10 w-auto"
           />
         </div>
@@ -42,7 +48,7 @@ export default function Footer() {
             href="https://www.instagram.com/fourwindsarg/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-primary hover:opacity-80 transition-opacity group"
+            className="flex items-center gap-2 text-black hover:text-accent transition-colors group"
             aria-label="Instagram Fourwinds"
           >
             <IconBrandInstagramFilled
@@ -53,13 +59,13 @@ export default function Footer() {
             <span className="text-base font-medium">Fourwinds</span>
           </Link>
 
-          <div className="hidden md:block w-px h-10 bg-primary/50" />
+          <div className="hidden md:block w-px h-10 bg-black/30" />
 
           <Link
             href="https://fourwinds.com.ar/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-base font-bold text-primary hover:underline transition-all"
+            className="text-base font-bold text-black hover:text-accent hover:underline transition-all"
           >
             fourwinds.com.ar
           </Link>
@@ -67,10 +73,10 @@ export default function Footer() {
 
         {/* Derecha: Info del evento */}
         <div className="flex flex-col items-center md:items-end md:w-1/3 gap-1">
-          <span className="text-xs text-outline tracking-[0.04em]">
+          <span className="text-xs text-black/70 tracking-[0.04em]">
             {EVENT.edition}
           </span>
-          <span className="text-xs text-outline tracking-[0.04em]">
+          <span className="text-xs text-black/70 tracking-[0.04em]">
             {EVENT.venue.name} · {EVENT.venue.location}
           </span>
         </div>
@@ -78,13 +84,13 @@ export default function Footer() {
 
       {/* Firma */}
       <div className="mt-4 pt-3 w-full flex justify-center text-center border-t-[0.5px] border-outline-variant/30">
-        <p className="text-[11px] text-on-surface-variant/70 tracking-wide">
+        <p className="text-[11px] text-black/70 tracking-wide">
           Desarrollado por:{" "}
           <Link
             href="https://danielfabiani.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-on-surface-variant hover:text-primary transition-colors font-medium"
+            className="text-black hover:text-accent transition-colors font-medium"
           >
             Daniel Fabiani
           </Link>

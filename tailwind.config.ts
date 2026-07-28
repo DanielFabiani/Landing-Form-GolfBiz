@@ -12,18 +12,20 @@ const config: Config = {
         sans: ['var(--font-jakarta)', 'system-ui', 'sans-serif'],
       },
       colors: {
-        // Heritage Greens — design tokens
-        primary:             '#002103',
-        'primary-container': '#103812',
-        secondary:           '#52652a',
-        'secondary-container': '#d2e8a0',
-        'tertiary-fixed':    '#e5e96d',
-        background:          '#f9f9f9',
+        // Brand design tokens
+        primary:             '#000000',
+        'primary-container': '#373633',
+        secondary:           '#CE121F',
+        'secondary-container': '#fce8e9',
+        'tertiary-fixed':    '#CE121F',
+        accent:              '#CE121F',
+        'accent-hover':      '#b00f1a',
+        background:          '#F6F5F5',
         surface:             '#ffffff',
-        'on-surface':        '#1a1c1c',
-        'on-surface-variant':'#42493f',
-        outline:             '#72796f',
-        'outline-variant':   '#c2c9bd',
+        'on-surface':        '#000000',
+        'on-surface-variant':'#222222',
+        outline:             '#555555',
+        'outline-variant':   '#d0d0d0',
       },
       keyframes: {
         fadeUp: {

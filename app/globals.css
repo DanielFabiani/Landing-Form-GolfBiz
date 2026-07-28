@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Heritage Greens — Design Tokens (CSS custom properties) ── */
+/* ── Brand Design Tokens (CSS custom properties) ── */
 :root {
-  --primary:              #002103;
-  --primary-container:    #103812;
+  --primary:              #000000;
+  --primary-container:    #373633;
   --on-primary:           #ffffff;
-  --secondary:            #52652a;
-  --secondary-container:  #d2e8a0;
+  --secondary:            #CE121F;
+  --secondary-container:  #fce8e9;
   --on-secondary:         #ffffff;
-  --tertiary-fixed:       #e5e96d;
-  --background:           #f9f9f9;
+  --tertiary-fixed:       #CE121F;
+  --accent:               #CE121F;
+  --accent-hover:         #b00f1a;
+  --background:           #F6F5F5;
   --surface:              #ffffff;
   --surface-container-low:#f3f3f3;
-  --on-surface:           #1a1c1c;
-  --on-surface-variant:   #42493f;
-  --outline:              #72796f;
-  --outline-variant:      #c2c9bd;
+  --on-surface:           #000000;
+  --on-surface-variant:   #222222;
+  --outline:              #555555;
+  --outline-variant:      #d0d0d0;
 }
