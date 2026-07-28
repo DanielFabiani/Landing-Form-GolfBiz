@@ -17,8 +17,11 @@ export default function Agenda() {
               Cómo va a ser la jornada
             </h2>
             <p className="text-base text-black/80 leading-[1.65] mt-3">
-              Recepción temprana, salidas simultáneas, cocktail de cierre con
-              palabras de los directivos y entrega de premios.
+              FastTrack te invita a participar de GolfBiz, un encuentro de
+              relacionamiento único en su tipo. La jornada contará con una
+              recepción temprana, salidas simultáneas y un cocktail de cierre,
+              que incluirá una presentación de lo que hacemos y la entrega de
+              premios.
             </p>
           </div>
 
