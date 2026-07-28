@@ -3,10 +3,10 @@ import { EVENT } from '@/config/event';
 export default function Format() {
   return (
     <section className="py-24 border-b-[0.5px] border-outline-variant" id="formato">
-      <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-secondary mb-4">
+      <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-accent mb-4">
         Formato
       </p>
-      <h2 className="text-[clamp(32px,4vw,48px)] font-semibold tracking-[-0.02em] text-primary leading-[1.1] mb-2">
+      <h2 className="text-[clamp(32px,4vw,48px)] font-semibold tracking-[-0.02em] text-black leading-[1.1] mb-2">
         Modalidad de juego
       </h2>
 
@@ -16,18 +16,18 @@ export default function Format() {
           return (
             <div
               key={i}
-              className={`${hl ? 'bg-primary' : 'bg-surface'} py-9 px-8 flex flex-col gap-3`}
+              className={`${hl ? 'bg-accent' : 'bg-surface'} py-9 px-8 flex flex-col gap-3`}
             >
               <span
                 className={`text-[10px] font-bold tracking-[0.16em] uppercase ${
-                  hl ? 'text-white/[0.45]' : 'text-outline'
+                  hl ? 'text-white/80' : 'text-black/60'
                 }`}
               >
                 {item.label}
               </span>
               <span
                 className={`text-[15px] font-medium leading-[1.55] ${
-                  hl ? 'text-white' : 'text-on-surface'
+                  hl ? 'text-white' : 'text-black'
                 }`}
               >
                 {item.value}

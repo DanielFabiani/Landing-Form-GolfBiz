@@ -74,7 +74,7 @@ export default function Hero() {
           <img
             src="/logo-fasttrack.svg"
             alt="Fasttrack"
-            className="w-[400px] pt-8 h-auto brightness-0 invert drop-shadow-md"
+            className="w-[300px] pt-8 h-auto brightness-0 invert drop-shadow-md"
           />
         </div>
       </div>

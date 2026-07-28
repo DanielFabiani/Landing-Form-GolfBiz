@@ -93,13 +93,13 @@ export default function RegistrationForm() {
       <div className="max-w-[760px] mx-auto">
         {/* Header */}
         <div className="mb-14">
-          <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-[rgba(165,210,157,0.7)] mb-4">
+          <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-accent mb-4">
             Inscripción
           </p>
           <h2 className="text-[clamp(32px,4vw,48px)] font-semibold tracking-[-0.02em] text-white leading-[1.1] mb-2">
             Reservá tu lugar
           </h2>
-          <p className="text-base text-white/[0.55] mt-3 leading-[1.6]">
+          <p className="text-base text-white/80 mt-3 leading-[1.6]">
             Completá tus datos. Te confirmamos tu participación por WhatsApp
             antes del evento.
           </p>
@@ -114,11 +114,11 @@ export default function RegistrationForm() {
             >
               <label
                 htmlFor={field.id}
-                className="text-[10px] font-bold tracking-[0.14em] uppercase text-white/[0.45]"
+                className="text-[10px] font-bold tracking-[0.14em] uppercase text-white/70"
               >
                 {field.label}
                 {field.required && (
-                  <span className="text-[rgba(165,210,157,0.8)] ml-0.5">*</span>
+                  <span className="text-accent ml-0.5">*</span>
                 )}
               </label>
               {field.type === "radio" ? (
@@ -130,7 +130,7 @@ export default function RegistrationForm() {
                       value="No"
                       checked={form[field.id] === "No"}
                       onChange={(e) => handleChange(field.id, e.target.value)}
-                      className="w-4 h-4 accent-[rgba(165,210,157,0.9)] cursor-pointer"
+                      className="w-4 h-4 accent-accent cursor-pointer"
                     />
                     <span>No</span>
                   </label>
@@ -141,7 +141,7 @@ export default function RegistrationForm() {
                       value="Sí"
                       checked={form[field.id] === "Sí"}
                       onChange={(e) => handleChange(field.id, e.target.value)}
-                      className="w-4 h-4 accent-[rgba(165,210,157,0.9)] cursor-pointer"
+                      className="w-4 h-4 accent-accent cursor-pointer"
                     />
                     <span>Sí</span>
                   </label>
@@ -153,7 +153,7 @@ export default function RegistrationForm() {
                   onChange={(e) => handleChange(field.id, e.target.value)}
                   placeholder={field.placeholder}
                   rows={1}
-                  className="bg-white/[0.07] border border-white/[0.12] rounded px-4 py-3 text-[15px] font-sans text-white outline-none transition-colors duration-200 placeholder:text-white/[0.22] focus:border-[rgba(165,210,157,0.6)] focus:bg-white/10 resize-none h-[50px]"
+                  className="bg-white/[0.07] border border-white/20 rounded px-4 py-3 text-[15px] font-sans text-white outline-none transition-colors duration-200 placeholder:text-white/30 focus:border-accent focus:bg-white/10 resize-none h-[50px]"
                 />
               ) : (
                 <input
@@ -164,7 +164,7 @@ export default function RegistrationForm() {
                   placeholder={field.placeholder}
                   autoComplete={field.autocomplete}
                   required={field.required}
-                  className="bg-white/[0.07] border border-white/[0.12] rounded px-4 py-3.5 text-[15px] font-sans text-white outline-none transition-colors duration-200 appearance-none placeholder:text-white/[0.22] focus:border-[rgba(165,210,157,0.6)] focus:bg-white/10"
+                  className="bg-white/[0.07] border border-white/20 rounded px-4 py-3.5 text-[15px] font-sans text-white outline-none transition-colors duration-200 appearance-none placeholder:text-white/30 focus:border-accent focus:bg-white/10"
                 />
               )}
             </div>
@@ -174,7 +174,7 @@ export default function RegistrationForm() {
         {/* Submit */}
         <div className="mt-9 flex flex-col gap-4 items-start">
           <button
-            className="inline-flex items-center gap-3 bg-tertiary-fixed text-primary text-xs font-bold tracking-[0.12em] uppercase px-10 py-[18px] rounded border-none cursor-pointer font-sans transition-all duration-200 hover:opacity-90 hover:-translate-y-px disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+            className="inline-flex items-center gap-3 bg-accent hover:bg-accent-hover text-white text-xs font-bold tracking-[0.12em] uppercase px-10 py-[18px] rounded-full border-none cursor-pointer font-sans transition-all duration-200 hover:-translate-y-px disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             onClick={handleSubmit}
             disabled={status === "loading"}
           >
