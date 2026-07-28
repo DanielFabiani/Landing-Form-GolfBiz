@@ -57,25 +57,23 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Presentado por */}
-        <p
-          className="text-[11px] sm:text-xl font-medium sm:font-semibold tracking-[0.2em] sm:tracking-[0.16em] mt-8 sm:mt-10 uppercase text-white/80 sm:text-white/80 animate-fadeUp drop-shadow"
+        {/* Presentado por + Sponsor */}
+        <div
+          className="flex flex-col items-center justify-center mt-8 sm:mt-20 animate-fadeUp"
           style={{ animationDelay: "0.4s" }}
         >
-          Presentado por
-        </p>
+          <p className="text-[11px] sm:text-xl font-medium sm:font-semibold tracking-[0.2em] sm:tracking-[0.16em] uppercase text-white/80 drop-shadow mb-1 sm:mb-2">
+            Presentado por
+          </p>
 
-        {/* Logos sponsors */}
-        <div
-          className="flex items-center justify-center gap-6 sm:gap-10 animate-fadeUp w-[65%] sm:w-[70%] md:w-[55%] max-w-[400px]"
-          style={{ animationDelay: "0.55s" }}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/logo-fasttrack.svg"
-            alt="Fasttrack"
-            className="w-[300px] pt-8 h-auto brightness-0 invert drop-shadow-md"
-          />
+          <div className="flex items-center justify-center w-[65%] sm:w-[70%] md:w-[55%] max-w-[600px]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo-fasttrack.svg"
+              alt="Fasttrack"
+              className="w-[600px] h-auto brightness-0 invert drop-shadow-md"
+            />
+          </div>
         </div>
       </div>
     </header>
