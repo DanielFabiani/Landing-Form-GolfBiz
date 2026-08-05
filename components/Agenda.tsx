@@ -17,7 +17,7 @@ export default function Agenda() {
               Cómo va a ser la jornada
             </h2>
             <p className="text-base text-black/80 leading-[1.65] mt-3">
-              FastTrack te invita a participar de GolfBiz, un encuentro de
+              Fast Track te invita a participar de GolfBiz, un encuentro de
               relacionamiento único en su tipo. La jornada contará con una
               recepción temprana, salidas simultáneas y un cocktail de cierre,
               que incluirá una presentación de lo que hacemos y la entrega de

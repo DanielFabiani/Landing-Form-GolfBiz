@@ -41,7 +41,7 @@ export const EVENT = {
 
   // ── Formato ───────────────────────────────────────────────────
   format: [
-    { label: 'Modalidad', value: 'Laguneada · Mejor pelota',                                                                                  highlight: false },
+    { label: 'Modalidad', value: 'Mejores 2 Pelotas',                                                                                  highlight: false },
     { label: 'Cupos',     value: '20 jugadores',                                            highlight: false },
     { 
       label: 'Incluye',   
