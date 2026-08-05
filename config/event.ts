@@ -43,7 +43,12 @@ export const EVENT = {
   format: [
     { label: 'Modalidad', value: 'Laguneada · Mejor pelota',                                                                                  highlight: false },
     { label: 'Cupos',     value: '20 jugadores',                                            highlight: false },
-    { label: 'Incluye',   value: 'Green fee, driving range, desayuno, bar en el hoyo 9, cocktail de cierre, regalos para todos los jugadores y premios para los ganadores.', highlight: true  },
+    { 
+      label: 'Incluye',   
+      value: 'Green fee, driving range, desayuno, bar en el hoyo 9, cocktail de cierre, regalos para todos los jugadores y premios para los ganadores.', 
+      highlight: true,
+      note: 'Los 18 Hoyos se juegan caminando, cada jugador debe llevar su propio carro de tiro. En caso de necesitarlo, por favor dar aviso a la organización.'
+    },
   ],
 
   // ── SEO / Meta ────────────────────────────────────────────────
