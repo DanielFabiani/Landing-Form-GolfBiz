@@ -20,8 +20,8 @@ export default function Agenda() {
               Fast Track te invita a participar de GolfBiz, un encuentro de
               relacionamiento único en su tipo. La jornada contará con una
               recepción temprana, salidas simultáneas y un cocktail de cierre,
-              que incluirá una presentación de lo que hacemos y la entrega de
-              premios.
+              que incluirá una breve presentación de nuestros servicios, la
+              entrega de premios y sorteos.
             </p>
           </div>
 
